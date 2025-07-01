@@ -1,4 +1,4 @@
-package common
+package gokit
 
 import "fmt"
 
