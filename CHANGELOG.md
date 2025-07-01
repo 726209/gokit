@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.1-alpha.2 (2025-07-01)
+
+
+### Features
+
+* **default:** 自定义commitizen ([3c41620](https://github.com/726209/utils/commit/3c416207eb70f23c0ff1bc8252415ad544d53af2))
+
 ### 0.0.1-alpha.1 (2025-07-01)
 
 
