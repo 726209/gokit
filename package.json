@@ -1,0 +1,55 @@
+{
+  "name": "gokit",
+  "version": "0.0.1-alpha.1",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/726209/utils.git"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "commit": "git cz",
+    "release": "standard-version -t ''",
+    "release:first": "npm run release -- --first-release",
+    "release:alpha": "npm run release -- --prerelease alpha",
+    "release:rc": "npm run release -- --prerelease rc",
+    "release:patch": "npm run release -- --release-as patch",
+    "release:minor": "npm run release -- --release-as minor",
+    "release:major": "npm run release -- --release-as major",
+    "release:as": "npm run release -- --release-as 5.10.0-alpha.7",
+    "push": "echo 'Publishing to ...'",
+    "test": "echo \"no test specified\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.4",
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "commitizen": "^4.3.1",
+    "cz-customizable": "^7.4.0",
+    "husky": "^9.1.7",
+    "standard-version": "^9.5.0"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": ".config/commitizen/config.js"
+    }
+  },
+  "standard-version": {
+    "scripts": {
+      "posttag": "git push --follow-tags origin main && npm run push && echo 'Publish Success!'"
+    }
+  }
+}

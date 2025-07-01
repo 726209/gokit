@@ -1,0 +1,11 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### 0.0.1-alpha.1 (2025-07-01)
+
+
+### Features
+
+* **default:** 新增repository配置 ([c488b57](https://github.com/726209/utils/commit/c488b57de8cf4497a3426c401e232f99833811d3))
+* **default:** 第一次提交代码 ([ab19c1a](https://github.com/726209/utils/commit/ab19c1a962ad9743f66d985f62efd5fe4ab6e297))
