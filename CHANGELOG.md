@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.1-alpha.3](https://github.com/726209/utils/compare/0.0.1-alpha.2...0.0.1-alpha.3) (2025-07-01)
+
+
+### Features
+
+* **default:** 定义package名称 ([620744b](https://github.com/726209/utils/commit/620744ba6eb7ad76533bd8689e3833ef28777cee))
+
 ### 0.0.1-alpha.2 (2025-07-01)
 
 
