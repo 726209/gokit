@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/726209/utils/compare/0.0.3-alpha.1...0.0.3) (2025-07-02)
+
 ### [0.0.3-alpha.1](https://github.com/726209/utils/compare/0.0.3-alpha.0...0.0.3-alpha.1) (2025-07-02)
 
 
