@@ -11,7 +11,7 @@
   "scripts": {
     "prepare": "husky",
     "commit": "git cz",
-    "release": "standard-version -t ''",
+    "release": "standard-version",
     "release:first": "npm run release -- --first-release",
     "release:alpha": "npm run release -- --prerelease alpha",
     "release:rc": "npm run release -- --prerelease rc",
