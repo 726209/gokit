@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.4-alpha.0 (2025-07-02)
+
+
+### Features
+
+* **default:** 定义package名称 ([620744b](https://github.com/726209/utils/commit/620744ba6eb7ad76533bd8689e3833ef28777cee))
+* **default:** 开发新功能 ([4bb8eca](https://github.com/726209/utils/commit/4bb8eca0fc7f263d9ff70e065c03ed620b2242ff))
+* **default:** 自定义commitizen ([3c41620](https://github.com/726209/utils/commit/3c416207eb70f23c0ff1bc8252415ad544d53af2))
+* **default:** 解决不识别版本号问题 ([536fda8](https://github.com/726209/utils/commit/536fda82cefab538822fc5a2e295e057c969e719))
+
 ### [0.0.3](https://github.com/726209/utils/compare/0.0.3-alpha.1...0.0.3) (2025-07-02)
 
 ### [0.0.3-alpha.1](https://github.com/726209/utils/compare/0.0.3-alpha.0...0.0.3-alpha.1) (2025-07-02)
