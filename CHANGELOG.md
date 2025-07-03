@@ -1,4 +1,11 @@
 abc
+### [0.0.5-alpha.4](https://github.com/726209/utils/compare/v0.0.5-alpha.3...v0.0.5-alpha.4) (2025-07-03)
+
+
+### ✨ Features | 新增功能
+
+* **default:** 数据库封装 ([e9f4d47](https://github.com/726209/utils/commit/e9f4d47d0537a24cf10da1f56abd9d1da75859da))
+
 ### [0.0.5-alpha.3](https://github.com/726209/utils/compare/v0.0.5-alpha.2...v0.0.5-alpha.3) (2025-07-03)
 
 
