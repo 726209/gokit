@@ -1,4 +1,6 @@
 abc
+### [0.0.5-alpha.1](https://github.com/726209/utils/compare/v0.0.5-alpha.0...v0.0.5-alpha.1) (2025-07-03)
+
 ### [0.0.5-alpha.0](https://github.com/726209/utils/compare/v0.0.4...v0.0.5-alpha.0) (2025-07-03)
 
 ### [0.0.4](https://github.com/726209/utils/compare/v0.0.4-alpha.11...v0.0.4) (2025-07-03)
