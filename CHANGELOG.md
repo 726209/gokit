@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4-alpha.2](https://github.com/726209/utils/compare/v0.0.4-alpha.1...v0.0.4-alpha.2) (2025-07-03)
+
+
+### Features
+
+* **default:** 增加日志功能 ([39e374c](https://github.com/726209/utils/commit/39e374c931d554aa43934662fd07b8416b75baa0))
+
 ### [0.0.4-alpha.1](https://github.com/726209/utils/compare/v0.0.4-alpha.0...v0.0.4-alpha.1) (2025-07-02)
 
 ### 0.0.4-alpha.0 (2025-07-02)
