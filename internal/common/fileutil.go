@@ -9,6 +9,12 @@ import (
 	"time"
 )
 
+// Exists checks if a file or directory exists
+func Exists(path string) bool {
+	_, err := os.Stat(path)
+	return !os.IsNotExist(err)
+}
+
 // WithTempDir 创建临时目录，执行用户提供的操作函数，结束后自动删除该目录。
 func WithTempDir(do func(tempDir string) error) error {
 	// 创建临时目录
