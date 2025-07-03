@@ -2,6 +2,13 @@
 
 > 本文件自动生成，请勿手动修改。
 
+### [1.0.1](https://github.com/726209/utils/compare/v1.0.0...v1.0.1) (2025-07-03)
+
+
+### ✨ Features | 新增功能
+
+* **default:** 增加判断文件是否存在方法 ([cf8374f](https://github.com/726209/utils/commit/cf8374ff2d13b8d6fbb5a42d9ec127ac094171b2))
+
 ## [1.0.0](https://github.com/726209/utils/compare/v0.0.5-alpha.7...v1.0.0) (2025-07-03)
 
 
