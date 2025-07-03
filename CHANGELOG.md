@@ -1,4 +1,14 @@
-abc
+# 📝 Changelog
+
+> 本文件自动生成，请勿手动修改。
+
+### [0.0.5-alpha.7](https://github.com/726209/utils/compare/v0.0.5-alpha.6...v0.0.5-alpha.7) (2025-07-03)
+
+
+### ✨ Features | 新增功能
+
+* **default:** ceshi ([80c4b1d](https://github.com/726209/utils/commit/80c4b1d567b89ab1146ae12afee3cc0b0e2601bd))
+
 ### [0.0.5-alpha.6](https://github.com/726209/utils/compare/v0.0.5-alpha.5...v0.0.5-alpha.6) (2025-07-03)
 
 
