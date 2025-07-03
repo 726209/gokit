@@ -1,6 +1,8 @@
 # 🌟 这是自定义配置的 CHANGELOG
 
 
+### [0.0.4-alpha.9](https://github.com/726209/utils/compare/v0.0.4-alpha.8...v0.0.4-alpha.9) (2025-07-03)
+
 ### [0.0.4-alpha.8](https://github.com/726209/utils/compare/v0.0.4-alpha.7...v0.0.4-alpha.8) (2025-07-03)
 
 ### [0.0.4-alpha.7](https://github.com/726209/utils/compare/v0.0.4-alpha.6...v0.0.4-alpha.7) (2025-07-03)
