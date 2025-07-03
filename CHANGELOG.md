@@ -1,4 +1,11 @@
 abc
+### [0.0.5-alpha.5](https://github.com/726209/utils/compare/v0.0.5-alpha.4...v0.0.5-alpha.5) (2025-07-03)
+
+
+### ✨ Features | 新增功能
+
+* **default:** fixed package ([e77fb62](https://github.com/726209/utils/commit/e77fb62c63c51192044901d1859b0365e52cc417))
+
 ### [0.0.5-alpha.4](https://github.com/726209/utils/compare/v0.0.5-alpha.3...v0.0.5-alpha.4) (2025-07-03)
 
 
