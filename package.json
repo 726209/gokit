@@ -1,6 +1,6 @@
 {
   "name": "gokit",
-  "version": "0.0.4-alpha.11",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
   "private": true,
@@ -11,7 +11,7 @@
   "scripts": {
     "prepare": "husky",
     "commit": "git cz",
-    "release": "standard-version --config=.config/.versionrc.js",
+    "release": "standard-version -- --config=.config/.versionrc.js",
     "release:first": "npm run release -- --first-release",
     "release:alpha": "npm run release -- --prerelease alpha",
     "release:rc": "npm run release -- --prerelease rc",
