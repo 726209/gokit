@@ -11,7 +11,7 @@
   "scripts": {
     "prepare": "husky",
     "commit": "git cz",
-    "release": "ln -sf .config/.versionrc.js .versionrc.js && standard-version --header abc --config=.config/.versionrc.js",
+    "release": "ln -sf .config/.versionrc.js .versionrc.js && standard-version",
     "release:first": "npm run release -- --first-release",
     "release:alpha": "npm run release -- --prerelease alpha",
     "release:rc": "npm run release -- --prerelease rc",
