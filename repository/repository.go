@@ -120,6 +120,10 @@ func (repo *Repository) WithContext(ctx context.Context) *Repository {
 	return &Repository{DB: repo.DB.WithContext(ctx)}
 }
 
+func (repo *Repository) WithUnscoped() *Repository {
+	return &Repository{DB: repo.DB.Unscoped()}
+}
+
 // Paginate applies offset and limit.
 func (repo *Repository) Paginate(offset, limit int) *Repository {
 	return &Repository{DB: repo.DB.Offset(offset).Limit(limit)}
@@ -217,7 +221,7 @@ func (repo *Repository) CreateBatch(value interface{}, batchSize int) {
 	logger.Infof("批量插入完成，共 %d 条记录，实际插入 %d 条", length, tx.RowsAffected)
 }
 
-func (repo *Repository) Read(dest interface{}, queryFunc func(*Repository, interface{}, ...interface{}) *Repository, conditions ...interface{}) {
+func (repo *Repository) Read(dest interface{}, queryFunc func(*Repository, interface{}, ...interface{}) *gorm.DB, conditions ...interface{}) {
 	tx := queryFunc(repo, dest, conditions...)
 	if tx.Error != nil {
 		if errors.Is(tx.Error, gorm.ErrRecordNotFound) {
