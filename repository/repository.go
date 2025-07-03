@@ -1,4 +1,4 @@
-package db
+package repository
 
 import (
 	"context"
@@ -18,6 +18,31 @@ import (
 	"strings"
 	"time"
 )
+
+/*
+
+// SimulateGenData 模拟生成数据
+func SimulateGenData(repo *db.Repository, len int) {
+	if len < 1 {
+		len = 10000
+	}
+	gofakeit.Seed(0)
+	pterm.Info.Println("Username:", gofakeit.Username())
+	var users []User
+	for i := 0; i < len; i++ {
+		user := User{
+			Name:     gofakeit.Name(),
+			Username: gofakeit.Username(),
+			Email:    gofakeit.Email(),
+			Phone:    gofakeit.Phone(),
+			Address:  gofakeit.Address().Address,
+			Bio:      GenerateBio(10), // 生成10个词的个人签名
+		}
+		users = append(users, user)
+	}
+	repo.CreateBatch(users, 100)
+}
+*/
 
 // Repository wraps gorm.DB and provides utility helpers.
 type Repository struct {
