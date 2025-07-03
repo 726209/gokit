@@ -46,6 +46,29 @@ func (c *Config) merge(option Config) {
 //		PrettyPrint: true,
 //	})
 //	defer logger.Sync()
+//
+// Other NOTE:
+//
+//	pterm.Info.
+//		WithPrefix(pterm.Prefix{Text: "测试", Style: pterm.NewStyle(pterm.FgRed)}).
+//		WithScope(pterm.Scope{Text: "UserModule"}).
+//		WithShowLineNumber(true).
+//		Println("created user")
+//	pterm.Info.
+//		WithPrefix(pterm.Prefix{Text: "MYAPP", Style: pterm.NewStyle(pterm.FgMagenta)}).
+//		WithMessageStyle(pterm.NewStyle(pterm.FgGreen, pterm.Italic)).
+//		WithScope(pterm.Scope{Text: "InitModule"}).
+//		Println("模块初始化完成")
+//
+//	.env
+//	//LOG_LEVEL=info
+//	//LOG_PRETTY=true
+//	//LOG_PATH=runtime/app.log
+//	//
+//	//DSN=root:123456@tcp(127.0.0.1:3306)/demo?charset=utf8mb4&parseTime=True&loc=Local
+//	//DSN=root:password@tcp(127.0.0.1:3306)/mydb
+//	//	//# 或
+//	//	//# DSN=test.db
 func InitLogger(options ...Config) {
 	// 默认配置
 	config := Config{
