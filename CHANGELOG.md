@@ -1,4 +1,11 @@
 abc
+### [0.0.5-alpha.6](https://github.com/726209/utils/compare/v0.0.5-alpha.5...v0.0.5-alpha.6) (2025-07-03)
+
+
+### ✨ Features | 新增功能
+
+* **default:** 新增 WithUnscoped ([b5e866c](https://github.com/726209/utils/commit/b5e866cba73ea868cccad5d40ddee1b073f3b60e))
+
 ### [0.0.5-alpha.5](https://github.com/726209/utils/compare/v0.0.5-alpha.4...v0.0.5-alpha.5) (2025-07-03)
 
 
