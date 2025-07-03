@@ -11,7 +11,7 @@
   "scripts": {
     "prepare": "husky",
     "commit": "git cz",
-    "release": "standard-version",
+    "release": "standard-version --config .config/.versionrc.js",
     "release:first": "npm run release -- --first-release",
     "release:alpha": "npm run release -- --prerelease alpha",
     "release:rc": "npm run release -- --prerelease rc",
@@ -44,7 +44,7 @@
       "path": "node_modules/cz-customizable"
     },
     "cz-customizable": {
-      "config": ".config/commitizen/config.js"
+      "config": ".config/.cz-config.js"
     }
   },
   "standard-version": {
