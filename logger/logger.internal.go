@@ -88,12 +88,12 @@ func builtPtermLogger() {
 	custom := pterm.DefaultLogger.
 		WithMaxWidth(width).
 		WithLevel(level). // 设置日志级别
-		WithTime(true).   // 显示时间
+		WithTime(true). // 显示时间
 		//WithTimeFormat("15:04:05").      // 时间格式
 		//WithCaller(pterm.PrintDebugMessages). // 显示调用者
 		WithCallerOffset(1).
 		//WithFormatter(pterm.LogFormatterJSON).
-		WithKeyStyles(priorityStyle).WithFormatter(pterm.LogFormatterJSON)
+		WithKeyStyles(priorityStyle)
 
 	// Define a new style for the "foo" key.
 	fooStyle := *pterm.NewStyle(pterm.FgGreen)

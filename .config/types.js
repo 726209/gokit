@@ -10,14 +10,14 @@ const types = [
   { value: 'docs', name: 'docs:     📝 文档变更', section: '📚 Documentation | 文档变更' },
   {
     value: 'style',
-    name: 'style:    💄代码格式（空白、格式化、去掉分号等，不影响功能）',
+    name: 'style:    💄 代码格式(空白、格式化、去掉分号等，不影响功能)',
     section: '💄 Style | 代码格式',
     hidden: true
   },
   {
     value: 'refactor',
-    name: 'refactor: ♻️ 重构代码(不包括Bug修复、功能新增)',
-    section: '♻️Refactor | 代码重构'
+    name: 'refactor: ♻️  重构代码(不包括Bug修复、功能新增)',
+    section: '♻️ Refactor | 代码重构'
   },
   { value: 'perf', name: 'perf:     ⚡️ 性能优化', section: '⚡ Performance | 性能优化' },
   { value: 'test', name: 'test:     ✅ 添加测试', section: '✅ Tests | 测试', hidden: true },
@@ -45,7 +45,12 @@ const types = [
     section: '⏪ Reverts | 回退提交',
     hidden: true
   },
-  { value: 'WIP', name: 'WIP: 正在进行的工作', section: 'WIP: 正在进行的工作', hidden: true }
+  {
+    value: 'WIP',
+    name: 'WIP:         正在进行的工作',
+    section: 'WIP: 正在进行的工作',
+    hidden: true
+  }
 ];
 
 module.exports = types;

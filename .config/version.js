@@ -1,7 +1,5 @@
 // tracker-version-updater.js
 
-const fs = require('fs');
-
 module.exports.readVersion = function (contents) {
   const match = contents.match(/var\s+Version\s+=\s+"([^"]+)"/);
   if (match) {
