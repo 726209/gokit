@@ -1,4 +1,11 @@
 abc
+### [0.0.5-alpha.3](https://github.com/726209/utils/compare/v0.0.5-alpha.2...v0.0.5-alpha.3) (2025-07-03)
+
+
+### ✨ Features | 新增功能
+
+* **default:** 取消json日志格式 ([250fde1](https://github.com/726209/utils/commit/250fde10046073e378fd04918e4bde6fb66e316e))
+
 ### [0.0.5-alpha.2](https://github.com/726209/utils/compare/v0.0.5-alpha.1...v0.0.5-alpha.2) (2025-07-03)
 
 ### [0.0.5-alpha.1](https://github.com/726209/utils/compare/v0.0.5-alpha.0...v0.0.5-alpha.1) (2025-07-03)
