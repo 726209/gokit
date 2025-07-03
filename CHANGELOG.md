@@ -2,6 +2,13 @@
 
 > 本文件自动生成，请勿手动修改。
 
+## [1.0.0](https://github.com/726209/utils/compare/v0.0.5-alpha.7...v1.0.0) (2025-07-03)
+
+
+### ✨ Features | 新增功能
+
+* **default:** 编写`README.md`文件，发布第一个稳定版 ([e3f8200](https://github.com/726209/utils/commit/e3f82009dfdf2b54656ef682fc061f6fcc5a4e00))
+
 ### [0.0.5-alpha.7](https://github.com/726209/utils/compare/v0.0.5-alpha.6...v0.0.5-alpha.7) (2025-07-03)
 
 
