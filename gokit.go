@@ -35,19 +35,26 @@ var Time = struct {
 // ********************* time 类【END】 *********************
 
 // ******************** collection【BEGIN】 ********************
-var (
-	// Map 映射函数：将 []T 映射为 []R
-	Map = common.Map
 
-	// Filter 过滤函数：返回满足条件的 []T 子集
-	Filter = common.Filter
+// Map 映射函数：将 []T 映射为 []R
+func Map[T any, R any](list []T, f func(T) R) []R {
+	return common.Map(list, f)
+}
 
-	// Reduce 累加函数：将 []T 聚合成一个 R 值
-	Reduce = common.Reduce
+// Filter 过滤函数：返回满足条件的 []T 子集
+func Filter[T any](list []T, predicate func(T) bool) []T {
+	return common.Filter(list, predicate)
+}
 
-	// Find 查找函数：返回首个满足条件的元素及是否找到
-	Find = common.Find
-)
+// Reduce 累加函数：将 []T 聚合成一个 R 值
+func Reduce[T any, R any](list []T, initial R, f func(R, T) R) R {
+	return common.Reduce(list, initial, f)
+}
+
+// Find 查找函数：返回首个满足条件的元素及是否找到
+func Find[T any](list []T, predicate func(T) bool) (T, bool) {
+	return common.Find(list, predicate)
+}
 
 // ********************* collection【END】 *********************
 
