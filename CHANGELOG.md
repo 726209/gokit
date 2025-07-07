@@ -2,6 +2,13 @@
 
 > 本文件自动生成，请勿手动修改。
 
+### [1.0.2](https://github.com/726209/utils/compare/v1.0.1...v1.0.2) (2025-07-07)
+
+
+### 🐛 Bug Fixes | 修复缺陷
+
+* **default:** cannot use generic function common.Map without instantiation ([bd3ff7f](https://github.com/726209/utils/commit/bd3ff7f662bf89a098b05cac253f989490a58af8))
+
 ### [1.0.1](https://github.com/726209/utils/compare/v1.0.0...v1.0.1) (2025-07-03)
 
 
