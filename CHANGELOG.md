@@ -2,6 +2,13 @@
 
 > 本文件自动生成，请勿手动修改。
 
+### [1.0.3-alpha.0](https://github.com/726209/utils/compare/v1.0.2...v1.0.3-alpha.0) (2025-07-08)
+
+
+### ♻️ Refactor | 代码重构
+
+* **default:** 优化Paginating ([ccaf676](https://github.com/726209/utils/commit/ccaf676319153f30c9dbafb395e6caca53981b7d))
+
 ### [1.0.2](https://github.com/726209/utils/compare/v1.0.1...v1.0.2) (2025-07-07)
 
 
