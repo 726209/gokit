@@ -4,6 +4,13 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"log"
+	"os"
+	"path/filepath"
+	"reflect"
+	"strings"
+	"time"
+
 	"github.com/726209/gokit"
 	"github.com/726209/gokit/logger"
 	"github.com/joho/godotenv"
@@ -11,12 +18,6 @@ import (
 	"gorm.io/driver/mysql"
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
-	"log"
-	"os"
-	"path/filepath"
-	"reflect"
-	"strings"
-	"time"
 )
 
 /*
@@ -79,6 +80,7 @@ func CrateRepository(dsn string) (repo *Repository, err error) {
 	}
 	level := logger.GormLogLevel()
 	db, err := gorm.Open(dialect, &gorm.Config{
+		// Logger: logger.Default.LogMode(logger.Info),
 		Logger: &GormLogger{
 			LogLevel:      level,
 			SlowThreshold: 200 * time.Millisecond,
@@ -234,33 +236,54 @@ func (repo *Repository) Read(dest interface{}, queryFunc func(*Repository, inter
 }
 
 type PageResult[T any] struct {
-	Total int64 `json:"total"` // 总记录数
-	Data  []T   `json:"data"`  // 当前页数据
+	Page       int   `json:"page"`
+	PageSize   int   `json:"page_size"`
+	Total      int64 `json:"total"`       // 总记录数
+	TotalPages int   `json:"total_pages"` // 总页数
+	Count      int   `json:"count"`       // 当前页记录数
+	List       []T   `json:"list"`        // 当前页数据
 }
 
-func Paginating[T any](db *gorm.DB, offset, limit int) (PageResult[T], error) {
+// Paginating 分页查询
+//
+// 示例调用：
+// var db *gorm.DB // your initialized DB
+// res, err := Paginating[User](db.Where("age > ?", 18), 0, 10)
+// if err != nil {
+// log.Fatal(err)
+// }
+// fmt.Printf("共 %d 条记录，当前页 %d 条\n", res.Total, res.Count)
+func Paginating[T any](db *gorm.DB, page, pageSize int) (PageResult[T], error) {
 	var (
-		result PageResult[T]
-		list   []T
+		total int64
+		list  []T
 	)
-	if offset <= 0 {
-		offset = 1
+	if page <= 0 {
+		page = 1
 	}
-	if limit <= 0 || limit > 100 {
-		limit = 10
+	if pageSize <= 0 || pageSize > 1000 {
+		pageSize = 10
 	}
 
 	// 查询总数
-	if err := db.Model(new(T)).Count(&result.Total).Error; err != nil {
-		return result, err
+	if err := db.Model(new(T)).Count(&total).Error; err != nil {
+		return PageResult[T]{}, err
 	}
 	// 查询当前页数据
 	if err := db.
-		Limit(limit).
-		Offset((offset - 1) * limit).
+		Limit(pageSize).
+		Offset((page - 1) * pageSize).
 		Find(&list).Error; err != nil {
-		return result, err
+		return PageResult[T]{}, err
 	}
-	result.Data = list
-	return result, nil
+
+	// 构造结果
+	return PageResult[T]{
+		Page:       page,
+		PageSize:   pageSize,
+		Total:      total,
+		TotalPages: int((total + int64(pageSize) - 1) / int64(pageSize)),
+		Count:      len(list),
+		List:       list,
+	}, nil
 }
